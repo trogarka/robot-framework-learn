@@ -1,0 +1,5 @@
+# Robot Framework + Selenium dependencies
+# Pinned versions for consistent test execution
+robotframework==7.0.1
+robotframework-seleniumlibrary==6.4.0
+selenium==4.18.0
