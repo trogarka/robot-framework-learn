@@ -15,7 +15,7 @@ Open Career Page Successfully
     Open Career Page
 
     # Basic verification that page loaded successfully
-    Title Should Contain    Career    msg=Page title should contain 'Career'
     Location Should Contain    continero.com    msg=URL should contain continero.com
+    Location Should Contain    /career    msg=URL path should contain '/career'
 
     Log    Career page opened successfully
