@@ -1,5 +1,5 @@
 *** Settings ***
-Library           SeleniumLibrary
+Library           SeleniumLibrary    screenshot_root_directory=${EXECDIR}${/}screenshots
 
 *** Keywords ***
 # Browser management keywords - reusable setup/teardown for all tests
@@ -19,6 +19,12 @@ Close Browser With Screenshot
     Close Browser
 
 # Page-specific keywords - small, focused functions for better readability and reuse
+
+Scroll To Element
+    [Documentation]    Scrolls the page until the specified element is in view
+    [Arguments]    ${locator}
+    Wait Until Page Contains Element    ${locator}    ${WAIT_TIMEOUT}
+    Scroll Element Into View    ${locator}
 
 Open Career Page
     [Documentation]    Opens the career page using the configured URL
@@ -41,8 +47,8 @@ Verify Image Srcs
     [Arguments]    ${image_count}
     FOR    ${index}    IN RANGE    0    ${image_count}
         ${img_element}=    Get WebElement    ${GALLERY_SELECTOR}:${index+1}    # Robot uses 1-based indexing
-        ${img_tag}=    Get WebElement    ${IMG_TAG}    parent=${img_element}
-        ${src}=    Get Element Attribute    ${img_tag}    src
+        ${IMG_SELECTOR}=    Get WebElement    ${IMG_SELECTOR}    parent=${img_element}
+        ${src}=    Get Element Attribute    ${IMG_SELECTOR}    src
         Should Not Be Empty    ${src}    msg=Image ${index+1} has empty src attribute
         Log    Image ${index+1} src: ${src}
     END

@@ -12,6 +12,7 @@ Verify Introduction Text Is Present
     ...    This verifies the career page content loads correctly.
     [Tags]    regression    content    introduction
     Open Career Page
+    Scroll To Element    ${INTRO_SELECTOR}
 
     # Verify the introduction text element is present and visible
     Verify Intro Present

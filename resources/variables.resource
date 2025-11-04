@@ -4,9 +4,9 @@
 ${CAREER_URL}    https://www.continero.com/cs/career
 
 # CSS Selectors - stored as variables for reuse and easy maintenance
-${GALLERY_SELECTOR}    css:.TeamGallery__ImageWrapper-sc-4q1is0-3.fkxQUK
-${INTRO_SELECTOR}      css:HeroJoin__WeLookForWrapper-fa709w-4.gUhzZA
-${IMG_TAG}             css=img
+${GALLERY_SELECTOR}    css:.TeamGallery__Wrapper-sc-4q1is0-0.bCgXm
+${INTRO_SELECTOR}      css:.HeroJoin__WeLookForWrapper-fa709w-4.gUhzZA
+${IMG_SELECTOR}        css:.TeamGallery__ImageWrapper-sc-4q1is0-3.fkxQUK
 
 # Browser configuration - headless Chrome for CI/CD, change to False for debugging
 ${HEADLESS}            ${True}

@@ -22,3 +22,6 @@ report.html
 .vscode/
 .idea/
 *.swp
+
+# Ignore screenshots captured by tests
+screenshots/

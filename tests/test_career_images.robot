@@ -13,6 +13,7 @@ Verify Gallery Image Count And Sources
     ...    This verifies the photo gallery displays correctly.
     [Tags]    regression    gallery    images
     Open Career Page
+    Scroll To Element    ${GALLERY_SELECTOR}
 
     # Count the gallery images
     ${image_count}=    Count Gallery Images
