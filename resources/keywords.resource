@@ -8,7 +8,7 @@ Open Headless Browser
     [Documentation]    Opens Chrome browser in headless mode
     ...    Using headless for automated testing, set to False for visual debugging
     [Arguments]    ${url}=${CAREER_URL}
-    Open Browser    ${url}    browser=${BROWSER}    options=add_argument("--headless=new"); add_argument("--no-sandbox"); add_argument("--disable-dev-shm-usage")
+    Open Browser    ${url}    browser=${BROWSER}    options=add_argument("--headless=new")
     Set Selenium Speed    0    # Remove artificial delays for faster execution
     Set Selenium Timeout    ${WAIT_TIMEOUT}
 
