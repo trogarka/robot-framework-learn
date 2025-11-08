@@ -2,7 +2,7 @@
 
 A beginner-friendly Robot Framework project that tests the Continero career page using Selenium WebDriver with Chrome in headless mode.
 
-## 📋 Project Structure
+## Project Structure
 
 ```
 robot-framework-learn/
@@ -17,7 +17,7 @@ robot-framework-learn/
 └── README.md
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.8+ installed
@@ -61,7 +61,7 @@ python -m robot --include gallery tests
 python -m robot tests --output results/output.xml --log results/log.html --report results/report.html
 ```
 
-## 🧪 Test Overview
+## Test Overview
 
 ### Test 1: Open Career Page (`test_open_page.robot`)
 - **Purpose**: Basic smoke test to verify page accessibility
@@ -81,7 +81,7 @@ python -m robot tests --output results/output.xml --log results/log.html --repor
 - **Tags**: `regression`, `content`, `introduction`
 - **Validations**: Introduction text element exists and is visible
 
-## 🔧 Configuration
+## Configuration
 
 ### Headless vs. Visible Browser
 
@@ -125,14 +125,14 @@ Chrome runs with these options for CI/CD compatibility:
 - Descriptive error messages in assertions
 - Detailed logging for debugging
 
-## 🐛 Debugging Tips
+## Debugging Tips
 
 1. **Run with visible browser**: Set `${HEADLESS}` to `${False}`
 2. **Check logs**: Look at `log.html` for detailed execution steps
 3. **Screenshots**: Failed tests automatically capture screenshots
 4. **Increase timeout**: Temporarily increase `${WAIT_TIMEOUT}` for slow networks
 
-## 📚 Learning Points
+## Learning Points
 
 This project demonstrates:
 - **Good practices**: Resource files, descriptive keywords, proper cleanup
@@ -141,7 +141,7 @@ This project demonstrates:
 - **Error handling**: Screenshots on failure, clear error messages
 - **Beginner-friendly**: Simple structure with helpful comments
 
-## 🔄 CI/CD Ready
+## CI/CD Ready
 
 The configuration is optimized for automated execution:
 - Headless browser for server environments
