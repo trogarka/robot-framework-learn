@@ -25,3 +25,6 @@ report.html
 
 # Ignore screenshots captured by tests
 screenshots/
+
+# Ignore temporary files
+edhouse-suite

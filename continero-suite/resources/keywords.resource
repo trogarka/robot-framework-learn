@@ -1,5 +1,6 @@
 *** Settings ***
 Library           SeleniumLibrary    screenshot_root_directory=${EXECDIR}${/}screenshots
+Resource          variables.resource
 
 *** Keywords ***
 # Browser management keywords - reusable setup/teardown for all tests
